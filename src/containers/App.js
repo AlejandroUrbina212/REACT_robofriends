@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
+import Header from '../components/Header';
 import { setSearchField, requestRobotsAction} from '../actions';
 //import {robots} from './robots'; //destructure needed because it could be multiple variables in robots.js
 // if there were multiple objects it would be import {robots, cats} from './robots'
@@ -43,7 +44,7 @@ class App extends Component {
         } else {
             return (
                 <div className="tc">
-                    <h2>Robofriends</h2>
+                    <Header />
                     <SearchBox searchChange={onSearchChange}/>
                     <Scroll>
                         <CardList robots={filteredRobots} />
