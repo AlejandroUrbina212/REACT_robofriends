@@ -4,8 +4,7 @@ import React from 'react';
 // simplest way of destructuring (directly from the parameter)
 function Card ({name, email, id}) {
     // simpler way of destructuring (review ES6)
-    //const {name, email, id} = props;
-
+    // same as const {name, email, id} = props;
     // Card function can only return one element
     return (
         <div className="bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5 tc">

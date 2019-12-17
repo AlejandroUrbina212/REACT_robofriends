@@ -5,7 +5,7 @@ import {
     REQUEST_ROBOTS_FAILED } 
 from "./constants";
 /**
- * setSearch field function returns an object with the type of action and the payload text
+ * setSearch field pure function returns an object with the type of action and the payload text
  * @param {*} text the text to return in the object
  */
 export const setSearchField = (text) => {

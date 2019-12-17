@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+/* connect method makes the component redux aware */
 import { connect } from 'react-redux';
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
@@ -19,6 +20,7 @@ const mapStateToProps = (state) => {
 }
 // App.js inherits the dispatch provided by Provider in index.js due to the redux implementation
 // this is implicit in the call to mapDispatchToProps in the bottom line of this file
+// in this function we return the functions that contain the actions within them
 const mapDispatchToProps = (dispatch) => {
     return {
         onSearchChange: (event) => dispatch(setSearchField(event.target.value)),

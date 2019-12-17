@@ -7,12 +7,14 @@ import Card from './Card';
 // that they are pure functions that receive something and return something
 const CardList = ({robots}) => {
     const cardArray = robots.map((user, i) =>{
-        return (<Card 
+        return (
+            <Card 
             // every time a loop is executed there must be a key for the component
             key={i} 
             id={robots[i].id} 
             name={robots[i].name} 
-            email={robots[i].email} />
+            email={robots[i].email} 
+            />
             );
     })
     return (
